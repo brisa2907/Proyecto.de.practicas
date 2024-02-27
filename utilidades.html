@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>utilidades de la GRID de Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
+	<style type="text/css">
+		.row
+		{
+		background-color: #e8e8e8;
+		margin-top: 28px;
+		margin-bottom: 28px;
+		}
+		.columnas
+		{
+			background-color: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+  		<div class="container">
+	  			<h3>Ordenar columnas con order-1 al order-5</h3>
+	  			<div class="row">
+
+	  				<!-- order-1 cambia la posicion de los divs sin necesidad de cortar y pegar la etiqueta, order-md-1 hace que cuando el espacio sea mas pequeño se cambia la posicion de las columnas.
+
+	  					extrachico XS
+	  					chico s
+	  					mediano md
+	  					grande lg
+	  					extragrande xl-->
+
+	  				<div class="columnas col order-2 order-md-1">Columna 1</div>
+	  				<div class="columnas col order-4 order-md-2">Columna 2</div>
+	  				<div class="columnas col order-3 order-md-3">Columna 3</div>
+	  				<div class="columnas col order-1 order-md-4">Columna 4</div>
+	  			</div>
+
+	  			
+	  				<h3>Ordenar columnas con order-last y order-first</h3>
+	  			<div class="row">
+					<div class="columnas col order-last">Columna 1</div>
+	  				<div class="columnas col order-first">Columna 2</div>
+	  				<div class="columnas col">Columna 3</div>
+	  				<div class="columnas col">Columna 4</div>
+	  			</div>
+
+	  			<h3>Ordenar columnas con offset</h3>
+	  			<p>Con offset indico cuantas columnas a la derecha se va a posicionar el elemento al que se le agrega a la clase</p>
+	  				<div class="row">
+						<div class="columnas col-3 offset-2">Columna 1</div>
+					</div>
+
+					<div class="row">
+						<div class="columnas col-3 offset-6">Columna 2</div>
+					</div>
+					
+					<div class="row">
+						<div class="columnas col-3 offset-7">Columna 3</div>
+					</div>
+	  			
+
+  		</div>
+
+<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
