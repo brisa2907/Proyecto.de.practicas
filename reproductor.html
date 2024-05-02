@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
+	<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/0f25780317.js"crossorigin="anonymous"></script>
+	<script src="jsaudio/js/jquery.js"></script>
+	<script src="jsaudio/js/jquery.audioControls.min.js"></script>
+	<script src="jsaudio/js/funciones.js"></script>
+	<style>
+		body
+		{
+			background: #1B2A37;
+		}
+		.botoncabecera
+		{
+			background-color: #41729F;
+			text-align: center;
+			border: 1px solid black;
+			border-radius: 20px;
+			margin: 20px;
+
+		}
+		.lista
+		{
+			background: #ADC4D7;
+		}
+	</style>
+	<title>Reproductor</title>
+</head>
+<body>
+<div class="container">
+	
+
+			
+	
+   <section class="row">
+		<main class="row col-md-6 bg-light-subtle text-black-50 mt-5 border border-5">
+						
+							
+							
+			<div class="row justify-content-between">
+				<div class="col-auto botoncabecera text-white"> <i class="fa-solid fa-arrow-left"></i></div>
+				<div class="col-auto botoncabecera text-white">
+				<p class="d-none d-md-block text-white">Reproduccion ahora</p>
+				<p class="d-block d-md-none text-white">Ahora</p></div>
+			    <div class="col-auto botoncabecera text-white"><i class="fa-solid fa-bars"></i></div>
+			</div>
+	
+			<div class="row text-center">
+				<div class="col">
+				   <img src="inicio.jfif" width="150px" class="rounded-circle">
+				</div>	
+
+			</div>
+
+
+		<div class="col">
+
+			<div class="row">
+				<span class="col-12 text-body-emphasis nombremp3 text-center">Nombre</span>
+				<span class="col-12 text-body-emphasis audioTime text-end" data-attr="timer">Tiempo</span>
+			</div>
+				<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      				<div class="progress-bar updateProgress"></div>
+				</div>
+			</div>
+
+			<div class="row">
+					<div class="col botoncabecera text-white"><i class="fa-solid fa-backward"></i></div>
+					<div class="col botoncabecera text-white"><i class="fa-solid fa-play"></i></div>
+					<div class="col botoncabecera text-white"><i class="fa-solid fa-forward"></i></div>
+			</div>
+		</main>  <!--mt= margin top mb= mrgin button pt= padding top-->
+
+
+		<div class="lista col-md-6 bg-light-subtle text-black-50 mt-5 border border-5">
+			<h3>Lista</h3>
+			<p class="d-none d-md-block"></p>
+			<p class="d-block d-md-none"></p>
+			<div class="col lista align-self-center bg-primary-subtle text-black-50">
+		    <ul class="list-group mt_5 playlist">
+
+			  <li class="list-group-item list-group-item-info"data-src="audios/Heavenly - Cigarettes After Sex.mp3"></i>♬ ₊˚.🎧⋆<a href="#" class="text-black">Heavenly</a></li>
+
+			  <li class="list-group-item list-group-item-primary"data-src="audios/Try Again.mp3">♬ ₊˚.🎧⋆</i><a href="#" class="text-black">Try Again</a></li>
+
+			  <li class="list-group-item list-group-item-info"data-src="audios/Hopelessly Devoted To You (From Grease).mp3">♬ ₊˚.🎧⋆<a href="#" class="text-black">Hopeslessly Devoted Yo You - Grease</a></li>
+
+			  <li class="list-group-item list-group-item-primary"data-src="audios/JVKE - golden hour (Official Lyric Video).mp3">♬ ₊˚.🎧⋆<a href="#" class="text-black">Golden Hour - JVKE</a></li>
+
+			  <li class="list-group-item list-group-item-info"data-src="audios/Angeleyes.mp3">♬ ₊˚.🎧⋆<a href="#" class="text-black">Angeleyes</a></li>
+
+			</ul>	
+		</div>
+			
+	</section>
+
+</div>
+<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
